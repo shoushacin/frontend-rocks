@@ -1,4 +1,4 @@
-import { PokeApi } from "./pokeapiClient";
+
 
 interface PokemonCard{
   id: number;
@@ -34,7 +34,7 @@ id: 4,
 },
 {
 id: 5,
-  name: "SQUIRTLE",
+  name: "SQUI LE",
   image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png ",
   types: ["fire", "water"],
 },
@@ -45,8 +45,6 @@ id: 5,
     types: ["fire"],
   },
 ];
-
-
 
 const typeC: { [key: string]: string} = {
   fire: "bg-red-300",
