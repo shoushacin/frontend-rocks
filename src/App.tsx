@@ -1,8 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
+
+export const Detail = () => {
+  const { id }= useParams();
+  return <div className="text-6xl">Dettaglio: {id}</div>
+} 
 
 export const App = () => {
   const [count, setCount] = useState(0);
   const [title, setTitle] = useState("Chopped-Chen");
+
+  useEffect(()=> {
+    if(count==4){
+    setTitle("AKMED NUR")
+    }
+  },[count])
 
   return (
     <div className="h-dvh flex flex-col items-center justify-center">
