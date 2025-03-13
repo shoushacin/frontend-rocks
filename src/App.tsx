@@ -46,10 +46,8 @@ id: 5,
   },
 ];
 
-async function fetchData(): Promise<string[]>{
-  const data = await PokeAPI.getPokemonsList();
-  return data.results.map(item => item.name);
-}
+
+
 const typeC: { [key: string]: string} = {
   fire: "bg-red-300",
   water: "bg-blue-300",
